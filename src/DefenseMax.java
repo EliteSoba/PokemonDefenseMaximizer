@@ -285,39 +285,6 @@ public class DefenseMax {
 	}
 
 	public static void main(String[] args) {
-		/*int HP, Def, SDef, EVs;
-		HP = 100; //100
-		Def = 110; //110
-		SDef = 100; //100
-		EVs = 510-76;
-		
-		double defMult = 1;
-		double sDefMult = 1.1*2.25;
-		
-		int EVPoints = EVs/4;
-		double max = 99999999;
-		int maxi = 0, maxj = 0, maxk = 0;
-		for (int i = 0; i <= 63; i++) {
-			for (int j = 0; j <= 63; j++) {
-				for (int k = 0; k <= 63; k++) {
-					if (i + j + k > EVPoints)
-						continue;
-					double cur = 20000 * (defMult*calcStat(Def, i) + sDefMult*calcStat(SDef, j)) + 4*(defMult*calcStat(Def, i))*(sDefMult*calcStat(SDef, j));
-					cur /= (calcHP(HP, k)) * (defMult*calcStat(Def, i))*(sDefMult*calcStat(SDef, j));
-					if (cur < max) {
-						max = cur;
-						maxi = i;
-						maxj = j;
-						maxk = k;
-					}
-				}
-			}
-		}
-		
-		System.out.println("HP EVs: " + (4*maxk));
-		System.out.println("Def EVs: " + (4*maxi));
-		System.out.println("SDef EVs: " + (4*maxj));*/
-		
 		DefenseMax Tyranitar = new DefenseMax(100, 110, 100, 510-76);
 		Tyranitar.addBeneficialSDef();
 		Tyranitar.addAssaultVest();
